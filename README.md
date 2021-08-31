@@ -124,7 +124,7 @@ az account set --subscription "Azure Subscription 1"
 az aks get-credentials --resource-group srend-c1-project --name udacity-aks
 ```
 2. Create a namespace called `monitoring`
-3. Create the `prometheus-addtional.yaml` file and set the `targets` accordingly for both prometheus, and blackbox.
+3. Create the `prometheus-additional.yaml` file and set the `targets` accordingly for both prometheus, and blackbox.
 4. Modify the `values.yaml` (near line 2310):
 ```
 additionalScrapeConfigsSecret:
