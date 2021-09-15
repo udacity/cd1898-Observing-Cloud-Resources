@@ -124,10 +124,10 @@ helm repo update
 
 ## Submissions
 1. A zip file containing screenshots from Grafana which include:
-    * The dashboard for VM/VMSS CPU utilization.
-    * The dashboard for VM/VMSS Memory utilization.
-    * The dashboard for VM/VMSS Disk I/O.
-    * The dashboard for VM/VMSS Network utilization.
+    * The dashboard for EC2 CPU utilization.
+    * The dashboard for EC2 Memory utilization.
+    * The dashboard for EC2 Disk I/O.
+    * The dashboard for EC2 Network utilization.
     * The imported dashboard for Blackbox Exporter.
     * The dashboard showing that an alert triggered (could be one of CPU/memory/disk/network utilization).
     * The message from the alert--this can be in slack, email or other.
