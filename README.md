@@ -6,8 +6,6 @@ Students will also have the opportunity to test and observe their own implementa
 
 ## Getting Started
 
-**Amazon Account Lab instructions go here**
-
 ### Dependencies
 * [Python](https://www.python.org/downloads/)
 * [kubectl](https://kubernetes.io/docs/tasks/tools/)
