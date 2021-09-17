@@ -1,8 +1,8 @@
 # Establish a Foundation in Observability
+In this project, students will apply the skills they have acquired in the Establish a Foundation in Observability course to configure a monitoring software stack to collect and display a variety of metrics for commonly used AWS cloud resources which include EC2, and EKS. Additionally, students will establish and configure rules for alerting and set parameters to be notified prior to the occurrence of failures within the aforementioned cloud resources. 
 
-In this project, students will apply the skills they have acquired in the Establish a Foundation in Observability course to configure a monitoring software stack to collect and display a variety of metrics for commonly used AWS cloud resources which include EC2, and EKS. Additionally, students will establish and configure rules for alerting and set parameters to be notified prior to the occurence of failures within the aformentioned cloud resources. 
+Students will also have the opportunity to test and observe their own implementation of the monitoring software stack to apply and showcase SRE methodologies and practices which can be transferred to real-world scenarios.  
 
-Students will also have the opportunity to test and observe thier own impementation of the monitoring software stack to apply and showcase SRE methodologies and practices which can be transferred to real-world scenarios.  
 
 ## Getting Started
 
