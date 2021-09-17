@@ -134,6 +134,7 @@ helm repo update
     * The alert showing that the flask app is offline.
     * The alert showing that the flask app is back online.
     * The list of alerting rules.
+2. The screenshot of the node_exporter service running on the EC2 instance `sudo systemctl status node_exporter`
 
 ## Built With
 ### Software
