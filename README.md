@@ -1,8 +1,8 @@
 # Establish a Foundation in Observability
 
-In this project, students will apply the skills they have acquired in the Establish a Foundation in Observability course to configure a monitoring software stack to collect and display a variety of metrics for commonly used Azure resources which include VM Scale Sets, Azure Kubernetes service and Azure VMs. Additionally, students will establish and configure rules for alerting and set parameters to be notified prior to the occurence of failures within the aformentioned cloud resources. 
+In this project, students will apply the skills they have acquired in the Establish a Foundation in Observability course to configure a monitoring software stack to collect and display a variety of metrics for commonly used AWS cloud resources which include EC2, and EKS. Additionally, students will establish and configure rules for alerting and set parameters to be notified prior to the occurence of failures within the aformentioned cloud resources. 
 
-Students will also have the opportunity to test and observe thier own implentation of the monitoring software stack to apply and showcase SRE methodologies and practices which can be transferred to real-world scenarios.  
+Students will also have the opportunity to test and observe thier own impementation of the monitoring software stack to apply and showcase SRE methodologies and practices which can be transferred to real-world scenarios.  
 
 ## Getting Started
 
@@ -30,8 +30,8 @@ Students will also have the opportunity to test and observe thier own implentati
 
 ### Test Connectivity to Flask App & Install Node Exporter
 
-1. Test that the API was successfully installed by opening Postman and [importing the collection, and enviroment files](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data) provided in the class resources.
-2. Change the following variables: `public-ip, username, email` then open the collection runner, choose the collection and environment, then Run the project. You should see successful resposnses for each of the API endpoints in the collection.
+1. Test that the API was successfully installed by opening Postman and [importing the collection, and environment files](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data) provided in the class resources.
+2. Change the following variables: `public-ip, username, email` then open the collection runner, choose the collection and environment, then Run the project. You should see successful responses for each of the API endpoints in the collection.
 3. Copy the value of the `token` variable, and paste it somewhere safe, you will need it later.
 
 Here are two examples of successful responses for `/init` and `authorize/user` endpoints:
