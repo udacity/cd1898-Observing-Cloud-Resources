@@ -1,8 +1,8 @@
 # Establish a Foundation in Observability
-In this project, students will apply the skills they have acquired in the Establish a Foundation in Observability course to configure a monitoring software stack to collect and display a variety of metrics for commonly used AWS cloud resources which include EC2, and EKS. Additionally, students will establish and configure rules for alerting and set parameters to be notified prior to the occurrence of failures within the aforementioned cloud resources. 
 
-Students will also have the opportunity to test and observe their own implementation of the monitoring software stack to apply and showcase SRE methodologies and practices which can be transferred to real-world scenarios.  
+In this project, students will apply the skills they have acquired in the Establish a Foundation in Observability course to configure a monitoring software stack to collect and display a variety of metrics for commonly used Azure resources which include VM Scale Sets, Azure Kubernetes service and Azure VMs. Additionally, students will establish and configure rules for alerting and set parameters to be notified prior to the occurence of failures within the aformentioned cloud resources. 
 
+Students will also have the opportunity to test and observe thier own implentation of the monitoring software stack to apply and showcase SRE methodologies and practices which can be transferred to real-world scenarios.  
 
 ## Getting Started
 
@@ -22,9 +22,30 @@ Students will also have the opportunity to test and observe their own implementa
 
 ### Installation
 #### Provision the Cloud Resources
-1. Use the terraform files to provision each of the resources in AWS; it will take a few minutes to complete. Once the script is complete, you can go to the AWS and look for the the newly created resources in the EKS and EC2 areas. 
+1. Open your AWS console and ensure it is set for region `us-east-1`. Open the CloudShell by clicking the little shell icon in the toolbar at the top near the search box. 
 
-2. SSH into the EC2 instance.
+<!-- 1. Set up your aws credentials from Udacity AWS Gateway locally
+    - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+    - Set your region to `us-east-1` -->
+
+2. Copy the AMI to your account
+
+   **Restore image**
+
+    ```shell
+    aws ec2 create-restore-image-task --object-key ami-08dff635fabae32e7.bin --bucket udacity-srend --name "udacity-<your_name>"
+    ```
+    <!-- - Replace the owner field in `_data.tf` with your Amazon owner ID assigned on the AMI (you can get this in the console by going to EC2 - AMIs and selecting the Owned by me at the top filter) -->
+    - Take note of that AMI ID the script just output. Copy the AMI to `us-east-2`:
+        - `aws ec2 copy-image --source-image-id <your-ami-id-from-above> --source-region us-east-1 --region us-east-2 --name "udacity-nanderson"`
+
+    - Make note of the ami output from the above 2 commands. You'll need to put this in the `ec2.tf` file.
+3. Create a private key pair for your EC2 instance called `udacity`
+
+
+4. Use the terraform files to provision each of the resources in AWS; it will take a few minutes to complete. Once the script is complete, you can go to the AWS and look for the the newly created resources in the EKS and EC2 areas. 
+
+5. SSH into the EC2 instance.
 
 ### Test Connectivity to Flask App & Install Node Exporter
 
