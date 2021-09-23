@@ -46,7 +46,7 @@ Students will also have the opportunity to test and observe thier own implentati
 4. Use the terraform files to provision each of the resources in AWS; it will take a few minutes to complete. Once the script is complete, you can go to the AWS and look for the the newly created resources in the EKS and EC2 areas. 
 
 5. SSH into the EC2 instance with username `ubuntu` and the udacity key created in a previous step.
-6. Install the node exporter on the EC2 instance
+6. Install the node exporter on the EC2 instance. Don't forget to allow traffic on port 9100.
 
 ### Test Connectivity to Flask App
 
