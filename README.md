@@ -1,6 +1,6 @@
 # Establish a Foundation in Observability
 
-In this project, students will apply the skills they have acquired in the Establish a Foundation in Observability course to configure a monitoring software stack to collect and display a variety of metrics for commonly used Azure resources which include VM Scale Sets, Azure Kubernetes service and Azure VMs. Additionally, students will establish and configure rules for alerting and set parameters to be notified prior to the occurence of failures within the aformentioned cloud resources. 
+In this project, students will apply the skills they have acquired in the Establish a Foundation in Observability course to configure a monitoring software stack to collect and display a variety of metrics for commonly used AWS resources which include EC2 and EKS. Additionally, students will establish and configure rules for alerting and set parameters to be notified prior to the occurence of failures within the aformentioned cloud resources. 
 
 Students will also have the opportunity to test and observe thier own implentation of the monitoring software stack to apply and showcase SRE methodologies and practices which can be transferred to real-world scenarios.  
 
