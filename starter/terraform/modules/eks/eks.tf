@@ -1,7 +1,7 @@
 resource "aws_eks_cluster" "cluster" {
-   name     = "${var.name}-cluster"
-   version  = "1.21"
-   role_arn = aws_iam_role.eks_cluster_role.arn
+  name     = "${var.name}-cluster"
+  version  = "1.29"
+  role_arn = aws_iam_role.eks_cluster_role.arn
 
    vpc_config {
      subnet_ids = var.private_subnet_ids
