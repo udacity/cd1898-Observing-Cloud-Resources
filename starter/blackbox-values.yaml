@@ -64,8 +64,9 @@ strategy:
   type: RollingUpdate
 
 image:
-  repository: prom/blackbox-exporter
-  tag: v0.19.0
+  registry: quay.io
+  repository: prometheus/blackbox-exporter
+  tag: ""
   pullPolicy: IfNotPresent
 
   ## Optionally specify an array of imagePullSecrets.
