@@ -100,21 +100,21 @@ affinity: {}
 # in favor of the config value.
 configExistingSecretName: ""
 # Store the configuration as a `Secret` instead of a `ConfigMap`, useful in case it contains sensitive data
-# secretConfig: false
-# config:
-#   modules:
-#     http_2xx:
-#       prober: http
-#       timeout: 5s
-#       http:
-#         valid_http_versions: ["HTTP/1.1", "HTTP/2.0"]
-#         follow_redirects: true
-#         preferred_ip_protocol: "ip4"
-#         valid_status_codes:
-#         - 200
-#         # - 401
-#         # - 403
-#         bearer_token: 
+secretConfig: false
+config:
+  modules:
+    http_2xx:
+      prober: http
+      timeout: 5s
+      http:
+        valid_http_versions: ["HTTP/1.1", "HTTP/2.0"]
+        follow_redirects: true
+        preferred_ip_protocol: "ip4"
+        valid_status_codes:
+          - 200
+        # - 401
+        # - 403
+        bearer_token: XXXXXXXXXXX
 # Set custom config path, other than default /config/blackbox.yaml. If let empty, path will be "/config/blackbox.yaml"
 # configPath: "/foo/bar"
 
