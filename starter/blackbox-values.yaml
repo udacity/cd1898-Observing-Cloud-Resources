@@ -221,14 +221,15 @@ serviceMonitor:
   tlsConfig: {}
   bearerTokenFile:
 
+  # where did this come from???
   targets:
-#    - name: example                    # Human readable URL that will appear in Prometheus / AlertManager
-#      url: http://example.com/healthz  # The URL that blackbox will scrape
-#      labels: {}                       # Map of labels for ServiceMonitor. Overrides value set in `defaults`
-#      interval: 60s                    # Scraping interval. Overrides value set in `defaults`
-#      scrapeTimeout: 60s               # Scrape timeout. Overrides value set in `defaults`
-#      module: http_2xx                 # Module used for scraping. Overrides value set in `defaults`
-#      additionalMetricsRelabels: {}    # Map of metric labels and values to add
+    - name: ec2box # Human readable URL that will appear in Prometheus / AlertManager
+      url: http://50.16.168.194/events # The URL that blackbox will scrape
+      labels: {} # Map of labels for ServiceMonitor. Overrides value set in `defaults`
+      interval: 60s # Scraping interval. Overrides value set in `defaults`
+      scrapeTimeout: 60s # Scrape timeout. Overrides value set in `defaults`
+      module: http_2xx # Module used for scraping. Overrides value set in `defaults`
+      additionalMetricsRelabels: {} # Map of metric labels and values to add
 
 ## Custom PrometheusRules to be defined
 ## ref: https://github.com/coreos/prometheus-operator#customresourcedefinitions
