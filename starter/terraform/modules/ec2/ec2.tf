@@ -1,7 +1,7 @@
 resource "aws_instance" "web" {
   ami           = var.aws_ami
   instance_type = "t3.micro"
-  key_name = "udacity"
+  key_name      = "ec2-keypair"
   tags = {
     Name = "ubuntu"
   }
