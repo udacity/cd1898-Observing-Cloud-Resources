@@ -1,0 +1,16 @@
+- job_name: blackbox
+  metrics_path: /probe
+  params:
+    module: [http_2xx]
+  static_configs:
+    - targets:
+      - http://18.66.78.92    # Example: Udacity website IP (replace with actual IP)
+      - http://23.48.165.141 # Example: eBay website IP (replace with actual IP)
+      - http://20.204.244.192  # Example: DuckDuckGo website IP (replace with actual IP)
+  relabel_configs:
+  - source_labels: [__address__]
+    target_label: __param_target
+  - source_labels: [__param_target]
+    target_label: instance
+  - target_label: __address__
+    replacement: prometheus-blackbox-exporter.monitoring:9115
