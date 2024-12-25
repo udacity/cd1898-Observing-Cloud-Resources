@@ -1,15 +1,16 @@
+- job_name: 'ec2'
+  metrics_path: /metrics
+  static_configs:
+    - targets: 
+      - <public_ip>:9100
+      - <public_ip>:80
 - job_name: blackbox
   metrics_path: /probe
   params:
-    module: [http_2xx]  # You can change the module if needed, like http_2xx, https_2xx, etc.
+    module: [http_2xx]
   static_configs:
     - targets:
-      - http://udacity.com    # Monitoring HTTP version of Udacity website
-      - https://udacity.com   # Monitoring HTTPS version of Udacity website
-      - http://ebay.com      # Monitoring HTTP version of eBay website
-      - https://ebay.com     # Monitoring HTTPS version of eBay website
-      - http://duckduckgo.com  # Monitoring HTTP version of DuckDuckGo website
-      - https://duckduckgo.com # Monitoring HTTPS version of DuckDuckGo website
+      - http://<public_ip>
   relabel_configs:
   - source_labels: [__address__]
     target_label: __param_target
