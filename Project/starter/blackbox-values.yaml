@@ -171,7 +171,7 @@ config:
           - 200
           # - 401
           # - 403
-          # bearer_token: <YOUR_TOKEN>
+        bearer_token: "<YOUR_TOKEN>" # Insert your actual API token here
 
 
 # Set custom config path, other than default /config/blackbox.yaml. If let empty, path will be "/config/blackbox.yaml"
