@@ -11,6 +11,7 @@ Students will also have the opportunity to test and observe thier own implentati
 * [kubectl](https://kubernetes.io/docs/tasks/tools/)
 * [helm](https://helm.sh/docs/intro/install/)
 * [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+* [eksctl](https://eksctl.io/installation/)
 * [puTTY for Windows](https://www.chiark.greenend.org.uk/~sgtatham/putty/) ssh clients are native to Linux and Mac.
 
 ### Local Environment Setup

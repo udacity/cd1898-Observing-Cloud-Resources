@@ -1,6 +1,6 @@
 resource "aws_eks_cluster" "cluster" {
    name     = "${var.name}-cluster"
-   version  = "1.28"
+   version  = "1.31" # Update to the latest Kubernetes version
    role_arn = aws_iam_role.eks_cluster_role.arn
 
    vpc_config {
